@@ -1,0 +1,306 @@
+
+body {
+    background-color: #242D7F;
+}
+
+/* Default navbar styles */
+.navbar {
+    background-color: #242D7F;
+    transition: background-color 0.3s ease;
+    z-index: 100;
+
+  }
+  
+  .navbar a.navbar-brand img {
+    max-height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  
+ 
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    display: inline-block !important;
+    background: transparent;
+    outline: none; 
+    box-shadow: none; }
+
+
+.navbar-toggler:focus,
+.navbar-toggler:hover,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+
+  .navbar-toggler:focus {
+    outline: none;
+    border: transparent;
+
+  }
+  
+  .navbar-toggler img.toggle-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 50px;
+   
+  }
+  
+  .navbar.navbar-scrolled {
+    background-color: #f8f9fa !important;
+  }
+
+/* Fullscreen menu styles */
+
+
+
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #242D7F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-family: "Archivo";
+  font-weight: 900;
+ 
+  line-height: 40px;
+}
+
+.fullscreen-menu .close-btn {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none; 
+  box-shadow: none; 
+}
+
+.fullscreen-menu .close-btn img.close-icon {
+  width: 40px;
+  height: auto;
+}
+
+.fullscreen-menu .menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1400px;
+  margin-top: 400px;
+}
+
+.fullscreen-menu .menu-items {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.fullscreen-menu .menu-items li {
+  margin: 20px 0;
+}
+
+.fullscreen-menu .menu-items a {
+  color: #fff;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+
+.fullscreen-menu .contact-info {
+  color: #fff;
+  text-align: right;
+  font-family: 'Archivo';
+  font-weight: 300;
+  margin-top: 60px;
+
+}
+
+.fullscreen-menu .contact-info p,
+.fullscreen-menu .contact-info a {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.contact-info a {
+
+  color: #fff;
+}
+.contacto-word{
+  font-weight: bold;
+  font-family: 'Archivo';
+  line-height: 1px ;
+}
+
+.fullscreen-menu .social-icons {
+  margin-top: 20px;
+}
+
+.fullscreen-menu .social-icons img {
+  width: 25px;
+  margin: 0 10px;
+}
+
+.direccion {
+  line-height: 20px;
+}
+.mail{
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .navbar{
+  height: 100px;
+  }
+
+  .navbar::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, #242D7F 0%, transparent 100%);
+    z-index: 3;
+  }
+  .banner-background img {
+    content: url('./img/banner-mobile.png');
+    object-fit: contain;
+   
+  }
+
+
+  .fullscreen-menu .menu-content {
+    flex-direction: column;
+    align-items: flex-start;
+  padding-top: 40px;
+  margin-top: 0;
+    line-height: 130px;
+  }
+
+  .fullscreen-menu .contact-info {
+    display: none;
+  }
+
+  .fullscreen-menu .menu-items a {
+    font-size: 2.5rem;
+   
+  }
+   
+.navbar-toggler img.toggle-icon  {
+
+  margin-right: 0px;
+}
+
+.navbar a.navbar-brand img  {
+margin-left: 0;
+}
+.fullscreen-menu .close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+}
+
+
+}
+
+/* Hide and show fullscreen menu */
+.d-none {
+  display: none;
+}
+    
+  
+
+/* Banner styles */
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.banner-content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.banner-text h1 {
+  font-size: 3.5rem;
+  font-family: 'Archivo';
+  font-weight: bold;
+  margin: 0;
+  margin-bottom:5px;
+}
+
+
+.banner-shape img {
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.banner-text img {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+
+  
+  .banner-content {
+    top: 30%;
+  }
+
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-text p {
+    font-size: 1.2rem;
+  }
+
+  .banner-shape img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .banner-text img {
+    width: 250px;
+  }
+  .banner-shape img {
+    width: 150px;
+    height: 150px;
+    
+    margin-bottom: 60px;
+  }
+.banner-content{
+  top: 40%;
+}
+
+
+}
+
