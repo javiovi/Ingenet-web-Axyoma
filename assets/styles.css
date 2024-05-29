@@ -127,7 +127,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 10000;
   font-family: "Archivo";
   font-weight: 900;
  
@@ -1197,7 +1197,7 @@ z-index: 1000;
 }
 
 .banner-contenido img {
-  max-width: 90%;
+  max-width: 70%;
   height: auto;
   margin-top: 100px;
 }
@@ -1364,4 +1364,440 @@ z-index: 1000;
   .footer-bottom-bar{
     font-size: 10px;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait),
+       (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  
+  .scroll-indicator {
+    position: absolute;
+    top: 12.3%;
+    left: 2%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    display: none;
+  }
+  
+  .scroll-line {
+    width: 80%;
+    height: 100%;
+  }
+
+  .fullscreen-menu .menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    margin-top: 200px;
+  }
+ 
+.empresa-section {
+  position: relative;
+  padding: 100px 100px;
+  background-color: #242D7F;
+  color: #ffffff;
+  overflow: hidden;
+}
+.empresa-contenedor
+{ 
+  width: 80%;
+  z-index: 3;
+}
+
+.empresa-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: 'Archivo';
+ 
+}
+
+.highlight {
+  color: #00ADEF;
+  font-weight: 700;
+ letter-spacing: 1.1px;
+
+}
+
+.empresa-text {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: 'Archivo';
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.empresa-logos img {
+  max-width: 250px;
+  margin: 0 17px;
+}
+
+.sphere {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  opacity: 0;
+  z-index: 2;
+  animation: fadeInOut 8s infinite;
+  
+}
+
+.left-sphere {
+  top: 500px;
+ left: -300px;
+}
+
+.right-sphere {
+  top: 500px;
+  right: -300px;
+  
+}
+
+
+.svg-background{
+ top: 1680px;
+ left: 30px;
+}
+
+
+.servicios-section {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  padding: 100px 10px;
+  background-color: transparent;
+  color: #ffffff;
+  z-index: 3; 
+}
+
+.servicios-content {
+  max-width: 550px; 
+  margin: 0 auto;
+
+}
+
+
+
+.servicios-title {
+  font-size: 58px;
+  margin-bottom: 10px;
+  font-family:  'Archivo';
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.servicios-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  font-family: 'Archivo';
+  letter-spacing: 1px;
+
+}
+.italic {
+  font-style: italic;
+}
+
+.contact-text {
+  font-size: 39px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+  color: #00ADEF;
+  font-weight: 900;
+
+}
+
+
+.inicia {
+ font-family: 'Archivo';
+ font-weight: 300;
+ font-size: 12px;
+}
+.contact-text-mobile {
+  display: none;
+}
+.inicia-mobile{
+  display: none;
+} 
+.excelencia-section {
+  padding: 150px 0;
+  background-color: #242D7F;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+ 
+}
+
+.excelencia-title {
+  font-size: 50px;
+  font-family: 'Archivo';
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  z-index: 2;
+  position: relative;
+  text-align: left;
+  margin-left: 180px;
+
+}
+
+.sphere-excelencia { 
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    opacity: 0;
+    z-index: 2;
+    animation: excelencia 15s infinite;
+    
+  }
+
+  .sphere-final {
+    top: 2310px;
+   left: 80px; 
+  }
+  .sphere-two{
+    top: 1600px;
+    right:0px;
+  }
+
+.contact-form {
+  background-color: transparent;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow:none;
+  width: 100%;
+  margin-left: 0px;
+}
+.banner-ultimo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -270px;
+ 
+
+}
+.banner-contenido img {
+  max-width: 70%;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+}
+
+@media (min-width: 1366px) and (max-width: 1400px) {
+  .scroll-indicator {
+    position: absolute;
+    top: 10.5%;
+    left: 2%;
+    height: 86%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  
+  }
+  
+  
+  .empresa-section {
+    position: relative;
+    padding: 100px 100px;
+    background-color: #242D7F;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  .empresa-contenedor
+  { 
+    width: 60%;
+    z-index: 3;
+  }
+  
+  .empresa-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Archivo';
+   
+  }
+  
+  .highlight {
+    color: #00ADEF;
+    font-weight: 700;
+   letter-spacing: 1.1px;
+  
+  }
+  
+  .empresa-text {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'Archivo';
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .empresa-logos img {
+    max-width: 290px;
+    margin: 0 20px;
+  }
+  
+  .sphere {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    opacity: 0;
+    z-index: 2;
+    animation: fadeInOut 8s infinite;
+    
+  }
+  
+  .left-sphere {
+    top: 500px;
+   left: -300px;
+  }
+  
+  .right-sphere {
+    top: 500px;
+    right: -300px;
+    
+  }
+  
+  
+  .svg-background{
+   top: 1800px;
+   left: 30px;
+  }
+  
+  
+  .servicios-section {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    padding: 100px 10px;
+    background-color: transparent;
+    color: #ffffff;
+    z-index: 3; 
+  }
+  
+  .servicios-content {
+    max-width: 500px; 
+    margin: 0 auto;
+  
+  }
+  
+  
+  
+  .servicios-title {
+    font-size: 58px;
+    margin-bottom: 10px;
+    font-family:  'Archivo';
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .servicios-description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    font-family: 'Archivo';
+    letter-spacing: 1px;
+  
+  }
+  .italic {
+    font-style: italic;
+  }
+  
+  .contact-text {
+    font-size: 39px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+    color: #00ADEF;
+    font-weight: 900;
+  
+  }
+  
+  
+  .inicia {
+   font-family: 'Archivo';
+   font-weight: 300;
+   font-size: 12px;
+  }
+  .contact-text-mobile {
+    display: none;
+  }
+  .inicia-mobile{
+    display: none;
+  } 
+  .excelencia-section {
+    padding: 150px 0;
+    background-color: #242D7F;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+   
+  }
+  
+  .excelencia-title {
+    font-size: 50px;
+    font-family: 'Archivo';
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    z-index: 2;
+    position: relative;
+    text-align: left;
+    margin-left: 180px;
+  
+  }
+  
+  .sphere-excelencia { 
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      opacity: 0;
+      z-index: 2;
+      animation: excelencia 15s infinite;
+      
+    }
+  
+    .sphere-final {
+      top: 2450px;
+     left: 120px; 
+    }
+    .sphere-two{
+      top: 1600px;
+      right:0px;
+    }
+  
+  .contact-form {
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow:none;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .banner-ultimo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -270px;
+   
+  
+  }
+  .banner-contenido img {
+    max-width: 60%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  
+
+
+
 }
