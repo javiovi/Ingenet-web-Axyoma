@@ -300,14 +300,16 @@ margin-left: 0;
   z-index: 1;
 }
 
+
 .banner-content {
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center;
   color: white;
+  
 }
 
 .banner-text h1 {
@@ -316,18 +318,44 @@ margin-left: 0;
   font-weight: bold;
   margin: 0;
   margin-bottom:5px;
+  
 }
+.banner-text img {
+  width: 350px;
 
+}
 
 .banner-shape img {
   width: 180px;
   height: 180px;
   margin-top: 0px;
   margin-bottom: 50px;
+ 
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-text h1,
+.banner-text img{
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+.banner-text h1 {
+  transition: opacity 5s ease-out, transform 4s ease-out;
 }
 .banner-text img {
-  width: 350px;
+  transition: opacity 5s ease-out, transform 4s ease-out;
 }
+
 
 
 @media (max-width: 768px) {
@@ -627,8 +655,20 @@ margin-left: 0;
 .inicia {
  font-family: 'Archivo';
  font-weight: 300;
- font-size: 12px;
+ font-size: 14px;
+text-decoration: none;
+color:#F0F2F5;
+
+
 }
+
+.whatsapp-icon {
+  width: 40px; 
+  height: 40px; 
+  margin-right: 5px;
+  margin-bottom: 5px; 
+}
+
 .contact-text-mobile {
   display: none;
 }
@@ -644,6 +684,7 @@ margin-left: 0;
   margin-top: 20px;
   width: 500px;
   z-index: 2;
+ 
 }
 
 .accordion-item {
@@ -656,7 +697,7 @@ margin-left: 0;
   border-radius: 40px;
   font-size: 12px;
   
-  
+ 
 }
 
 .accordion-header {
@@ -676,6 +717,7 @@ margin-left: 0;
   font-size: 14px;
   font-family: 'Archivo';
   height: 60px;
+  cursor:default !important;
   
 }
 .accordion-button::after {
@@ -795,9 +837,17 @@ margin-left: 0;
    font-weight: 300;
    font-size: 11px;
    display: block;
+   text-decoration: none;
+   color: #F0F2F5;
   }
 
-
+  .whatsapp-icon {
+    width: 20px;
+    height:20px; 
+    margin-right: 1px;
+    margin-bottom: 1px; 
+  }
+  
   .contact-text {
   display: none;
   
@@ -985,6 +1035,7 @@ z-index: 1000;
   position: relative;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 80px;
  
 }
 
@@ -1013,7 +1064,7 @@ z-index: 1000;
   }
 
   .sphere-final {
-    top: 2650px;
+    top: 2600px;
    left: 80px; 
   }
   
@@ -1557,7 +1608,7 @@ z-index: 1000;
   }
 
   .sphere-final {
-    top: 2310px;
+    top: 2110px;
    left: 80px; 
   }
   .sphere-two{

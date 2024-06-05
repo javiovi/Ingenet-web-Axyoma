@@ -58,9 +58,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             <p>Richieri 3966 - Rosario - Sta Fe</p>
             </div>
             <div class="social-icons">
-              <a href="#"><img src="./assets/icons/ig.svg" alt="Instagram"></a>
-              <a href="#"><img src="./assets/icons/fb.svg" alt="Facebook"></a>
-              <a href="#"><img src="./assets/icons/Ln.svg" alt="LinkedIn"></a>
+              <a href="https://www.instagram.com/ingenetsrl/" target="_blank"><img src="./assets/icons/ig.svg" alt="Instagram"></a>
+              <a href="https://www.facebook.com/profile.php?id=61556972647136" target="_blank"><img src="./assets/icons/fb.svg" alt="Facebook"></a>
+              <a href="https://www.linkedin.com/company/ingenet-srl/" target="_blank"><img src="./assets/icons/Ln.svg" alt="LinkedIn"></a>
             </div>
           </div>
         </div>
@@ -97,8 +97,8 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             <img src="./assets/img/cuadrado-medio.svg" alt="Banner Shape">
           </div>
           <div class="banner-text">
-            <h1>Conectamos</h1>
-           <img src="./assets/icons/boton-trascender.svg" alt="btn trascender">
+            <h1 id="bannerText">Conectamos</h1>
+           <img id="bannerButton" src="./assets/icons/boton-trascender.svg" alt="btn trascender">
           </div>
     
         </div>
@@ -142,8 +142,11 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
               </p>
               <p class="contact-text"><strong>Contactanos</strong></p>
                 
-             <p class="inicia">Iniciá una conversación ahora a través de nuestro WhatsApp</p>
-            
+              <a href="https://wa.me/+5493416475101" target="_blank" class="inicia">
+                
+                Iniciá una conversación ahora a través de nuestro WhatsApp
+                <img src="./assets/icons/whats.png" alt="WhatsApp" class="whatsapp-icon">
+              </a>         
             </div>
             <div class="col-lg-6">
               <div class="accordion" id="accordionServicios">
@@ -210,8 +213,11 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
             </div>
             <p class="contact-text-mobile"><strong>Contactanos</strong></p>
                 
-            <p class="inicia-mobile">Iniciá una conversación ahora a través de nuestro WhatsApp</p>
-          </div>
+            <a href="https://wa.me/+5493416475101" target="_blank" class="inicia-mobile">
+                
+              Iniciá una conversación ahora a través de nuestro WhatsApp
+              <img src="./assets/icons/whats.png" alt="WhatsApp" class="whatsapp-icon">
+            </a>
         </div>   
       </section>
 
@@ -353,9 +359,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
                     <p>(0341) 433-3680 / 8986</p>
                     <p>Richieri 3966 - Rosario - Sta Fe</p>
                     <div class="footer-social-icons">
-                        <a href="#"><img src="./assets/icons/ig-foot.svg" alt="Instagram"></a>
-                        <a href="#"><img src="./assets/icons/fb-foot.svg" alt="Facebook"></a>
-                        <a href="#"><img src="./assets/icons/lin-foot.svg" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/ingenetsrl/" target="_blank"><img src="./assets/icons/ig-foot.svg" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556972647136" target="_blank"><img src="./assets/icons/fb-foot.svg" alt="Facebook"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556972647136" target="_blank"><img src="./assets/icons/lin-foot.svg" alt="LinkedIn"></a>
                     </div>
                 </div>
             </div>
@@ -408,6 +414,33 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
       location.reload(); // Recargar la página para restablecer el formulario
     }
   };
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const bannerText = document.querySelector(".banner-text h1");
+  const bannerButton = document.querySelector(".banner-text img");
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1
+  };
+
+  const handleIntersection = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = 'translateY(0)';
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(handleIntersection, options);
+
+  observer.observe(bannerText);
+  observer.observe(bannerButton);
 });
 
 
