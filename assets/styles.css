@@ -437,7 +437,10 @@ margin-left: 0;
   max-width: 250px;
   margin: 0 14px;
 }
-
+.claro{
+  max-width: 90px !important;
+  margin-bottom: 15px !important;
+}
 .sphere {
   position: absolute;
   width: 1200px;
@@ -498,7 +501,10 @@ margin-left: 0;
     max-width: 70px;
     margin: 0 5px;
   }
-
+  .claro{
+    max-width: 50px !important;
+    margin-bottom: 8px !important;
+  }
   .sphere {
     position: absolute;
     width: 200px;
@@ -566,6 +572,13 @@ margin-left: 0;
     max-width: 60px;
     margin: 0 5px;
   }
+
+  .claro{
+    max-width: 50px !important;
+    margin-bottom: 8px !important;
+  }
+
+
   .left-sphere {
     left: -40px;
     top: 750px;
