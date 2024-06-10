@@ -406,7 +406,7 @@ margin-left: 0;
 }
 .empresa-contenedor
 { 
-  width: 50%;
+  width: 70%;
   z-index: 3;
 }
 
@@ -415,6 +415,8 @@ margin-left: 0;
   margin-bottom: 20px;
   text-align: left;
   font-family: 'Archivo';
+ margin-left: 140px;
+  align-items: center;
  
 }
 
@@ -431,11 +433,13 @@ margin-left: 0;
   font-family: 'Archivo';
   margin-bottom: 30px;
   text-align: left;
+  width: 70%;
+  margin-left: 140px;
 }
 
 .empresa-logos img {
-  max-width: 250px;
-  margin: 0 14px;
+  max-width: 200px;
+  margin: 0 15px;
 }
 .claro{
   max-width: 90px !important;
@@ -491,18 +495,23 @@ margin-left: 0;
 @media (max-width: 768px) {
   .empresa-title {
     font-size: 22px;
+    margin-left: 0;
+    width: 100%;
   }
 
   .empresa-text {
     font-size: 1rem;
+    margin-left: 0;
+    width: 100%;
   }
 
   .empresa-logos img {
-    max-width: 70px;
-    margin: 0 5px;
+    max-width: 100px;
+    margin: 5px 10px;
+
   }
   .claro{
-    max-width: 50px !important;
+    max-width: 70px !important;
     margin-bottom: 8px !important;
   }
   .sphere {
@@ -569,12 +578,12 @@ margin-left: 0;
     font-size: 12px;
   } 
   .empresa-logos img {
-    max-width: 60px;
-    margin: 0 5px;
+    max-width: 90px;
+    margin: 5px 8px;
   }
 
   .claro{
-    max-width: 50px !important;
+    max-width: 60px !important;
     margin-bottom: 8px !important;
   }
 
@@ -1464,6 +1473,7 @@ z-index: 1000;
   background-color: #242D7F;
   color: #ffffff;
   overflow: hidden;
+
 }
 .empresa-contenedor
 { 
@@ -1476,6 +1486,8 @@ z-index: 1000;
   margin-bottom: 20px;
   text-align: left;
   font-family: 'Archivo';
+  margin-left: 0;
+  
  
 }
 
@@ -1492,11 +1504,14 @@ z-index: 1000;
   font-family: 'Archivo';
   margin-bottom: 30px;
   text-align: left;
+  margin-left: 0;
+  width: 100%;
+
 }
 
 .empresa-logos img {
-  max-width: 250px;
-  margin: 0 17px;
+  max-width: 200px;
+  margin: 0 20px;
 }
 
 .sphere {
@@ -1675,7 +1690,7 @@ z-index: 1000;
     overflow: hidden;
   }
   .empresa-contenedor
-  { 
+  {
     width: 60%;
     z-index: 3;
   }
@@ -1685,6 +1700,7 @@ z-index: 1000;
     margin-bottom: 20px;
     text-align: left;
     font-family: 'Archivo';
+    margin-left: 0;
    
   }
   
@@ -1701,11 +1717,13 @@ z-index: 1000;
     font-family: 'Archivo';
     margin-bottom: 30px;
     text-align: left;
+    margin-left: 0;
+    width: 100%;
   }
   
   .empresa-logos img {
-    max-width: 290px;
-    margin: 0 20px;
+    max-width: 220px;
+    margin: 5px 25px;
   }
   
   .sphere {
